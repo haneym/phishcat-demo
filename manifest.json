@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "PhishCat Security",
+  "version": "1.0",
+  "description": "Browser extension for low-latency dynamic web component integrity verification and anti-phishing detection.",
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "PhishCat Security"
+  }
+}

